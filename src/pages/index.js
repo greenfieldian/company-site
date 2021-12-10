@@ -3,10 +3,12 @@ import Layout from "../components/global/layout";
 import CallToAction from "../components/cta";
 import Hero from "../components/hero";
 import PartnerCloud from "../components/partner-cloud";
-import CasePreview from "../components/case-preview";
+import DoughnutsCasePreview from "../components/doughnuts-case-preview";
 import { GlobeAltIcon, LightningBoltIcon, ScaleIcon } from '@heroicons/react/outline'
 import { InboxIcon, SparklesIcon } from '@heroicons/react/outline'
 import Testimonial from "../components/testimonial";
+import RealEstateCasePreview from "../components/re-case-preview";
+import AppCasePreview from "../components/app-case-preview";
 
 
 const posts = [
@@ -100,10 +102,11 @@ class IndexPage extends Component {
           <Layout>
           <Hero />
           <PartnerCloud />
-          <CasePreview />
+          <DoughnutsCasePreview />
           <Testimonial />
-          <CasePreview />
-          <CasePreview />
+          <RealEstateCasePreview />
+          <Testimonial />
+          <AppCasePreview />
           <section>
               <div className="relative bg-white pt-16 pb-32 overflow-hidden">
                   <div className="text-center mb-5 sm:mb-20">

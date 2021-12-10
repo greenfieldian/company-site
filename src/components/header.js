@@ -82,7 +82,7 @@ function classNames(...classes) {
 
 export default function Header() {
     return (
-        <Popover className="relative bg-white">
+        <Popover className="relative bg-white z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
                     <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -249,7 +249,7 @@ export default function Header() {
                     <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                         <Link
                             to="/contact"
-                            className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                            className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 rounded-md shadow-sm text-base font-medium text-white bg-accent hover:bg-indigo-700"
                         >
                             Contact Us
                         </Link>
