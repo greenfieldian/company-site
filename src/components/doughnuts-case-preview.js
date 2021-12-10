@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Mockup from '../images/doughnuts-iphone-mockup.png'
 
 const metrics = [
     { id: 1, stat: '8K+', emphasis: 'Companies', rest: 'use laoreet amet lacus nibh integer quis.' },
@@ -7,17 +8,17 @@ const metrics = [
     { id: 4, stat: '12M+', emphasis: 'Issues resolved', rest: 'lacus nibh integer quis.' },
 ]
 
-class CasePreview extends Component {
+class DoughnutsCasePreview extends Component {
     render() {
         return (
             <segment>
-                <div className="relative bg-gray-900">
+                <div className="relative bg-doughnuts-cream">
                     <div className="h-80 absolute inset-x-0 bottom-0 xl:top-0 xl:h-full">
                         <div className="h-full w-full xl:grid xl:grid-cols-2">
-                            <div className="h-full xl:relative xl:col-start-2">
+                            <div className="h-full xl:relative xl:col-start-2 hidden lg:block">
                                 <img
-                                    className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
-                                    src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
+                                    className=" object-cover xl:absolute xl:inset-0 h-3/4 my-auto mx-auto"
+                                    src={Mockup}
                                     alt="People working on laptops"
                                 />
                                 <div
@@ -34,7 +35,7 @@ class CasePreview extends Component {
                   Valuable Metrics
                 </span>
                             </h2>
-                            <p className="mt-3 text-3xl font-extrabold text-white">
+                            <p className="mt-3 text-3xl font-extrabold">
                                 Get actionable data that will help grow your business
                             </p>
                             <p className="mt-5 text-lg text-gray-300">
@@ -45,9 +46,9 @@ class CasePreview extends Component {
                             <div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
                                 {metrics.map((item) => (
                                     <p key={item.id}>
-                                        <span className="block text-2xl font-bold text-white">{item.stat}</span>
+                                        <span className="block text-2xl font-bold">{item.stat}</span>
                                         <span className="mt-1 block text-base text-gray-300">
-                      <span className="font-medium text-white">{item.emphasis}</span> {item.rest}
+                      <span className="font-medium">{item.emphasis}</span> {item.rest}
                     </span>
                                     </p>
                                 ))}
@@ -60,4 +61,4 @@ class CasePreview extends Component {
     }
 }
 
-export default CasePreview;
+export default DoughnutsCasePreview;
