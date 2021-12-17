@@ -1,4 +1,7 @@
 import React, {Component} from 'react';
+import TravelMockup from '../images/travel-mockup.png'
+import Logo from "../images/dnd-logo.png";
+import {Link} from "gatsby";
 
 const metrics = [
     { id: 1, stat: '8K+', emphasis: 'Companies', rest: 'use laoreet amet lacus nibh integer quis.' },
@@ -11,13 +14,13 @@ class RealEstateCasePreview extends Component {
     render() {
         return (
             <segment>
-                <div className="relative bg-gray-900">
+                <div className="relative bg-travel-teal lg:pt-24 lg:pb-24">
                     <div className="h-80 absolute inset-x-0 bottom-0 xl:top-0 xl:h-full">
                         <div className="h-full w-full xl:grid xl:grid-cols-2">
-                            <div className="h-full xl:relative xl:col-start-2">
+                            <div className="h-full xl:relative xl:col-start-2 w-full hidden xl:block">
                                 <img
-                                    className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
-                                    src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
+                                    className="my-auto h-4/6  object-cover lg:inset-y-0 lg:right-16 xl:absolute rounded-lg xl:inset-0"
+                                    src={TravelMockup}
                                     alt="People working on laptops"
                                 />
                                 <div
@@ -28,29 +31,25 @@ class RealEstateCasePreview extends Component {
                         </div>
                     </div>
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8">
-                        <div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
-                            <h2 className="text-sm font-semibold tracking-wide uppercase">
-                <span className="bg-gradient-to-r from-purple-300 to-indigo-300 bg-clip-text text-transparent">
-                  Valuable Metrics
-                </span>
-                            </h2>
-                            <p className="mt-3 text-3xl font-extrabold text-white">
-                                Get actionable data that will help grow your business
-                            </p>
-                            <p className="mt-5 text-lg text-gray-300">
+                        <div className="relative pt-12 pb-16 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24 text-center sm:text-left">
+                            <div className="mt-3 mb-7 text-3xl font-extrabold lg:mb-16">
+                                <img
+                                    className="mx-auto h-16 sm:mx-0"
+                                    src={Logo}
+                                    alt="Doughnuts & Dragons Logo"
+                                />
+                            </div>
+                            <div>
+                                <h2 className="uppercase text-5xl tracking-tighter">Hustle Never Stops</h2>
+                            </div>
+                            <p className="mt-5 text-lg text-gray-300 md:mr-48">
                                 Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis in viverra tristique sem. Ornare
-                                feugiat viverra eleifend fusce orci in quis amet. Sit in et vitae tortor, massa. Dapibus laoreet amet
-                                lacus nibh integer quis. Eu vulputate diam sit tellus quis at.
+                                feugiat viverra eleifend fusce orci in quis amet.
                             </p>
-                            <div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
-                                {metrics.map((item) => (
-                                    <p key={item.id}>
-                                        <span className="block text-2xl font-bold text-white">{item.stat}</span>
-                                        <span className="mt-1 block text-base text-gray-300">
-                      <span className="font-medium text-white">{item.emphasis}</span> {item.rest}
-                    </span>
-                                    </p>
-                                ))}
+                            <div className="w-1/2 mx-auto sm:mx-0">
+                                <Link className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 sm:w-auto">
+                                    View Case Study
+                                </Link>
                             </div>
                         </div>
                     </div>

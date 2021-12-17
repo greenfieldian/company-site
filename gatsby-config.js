@@ -18,5 +18,12 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `63n4orvvac54`,
+        accessToken: `F4QHqWzR4PT-8iCzc0MT9dmp7nWVZXinNW-mVkQlBnA`,
+      },
+    },
   ],
 };
