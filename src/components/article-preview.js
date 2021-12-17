@@ -8,7 +8,7 @@ export default ({ article }) => (
         <div>
             <div className="mb-5">
                 <Link to={`/blog/${article.slug}`}>
-                    <img src={article.featuredImage.file.url} className="max-h-48 h-48 w-full rounded"/>
+                    <img src={article.featuredImage.file.url} className="max-h-48 h-48 w-full"/>
                 </Link>
             </div>
             <div>

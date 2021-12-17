@@ -55,7 +55,7 @@ function classNames(...classes) {
 
 export default function Header() {
     return (
-        <Popover className="relative bg-white z-50">
+        <Popover className="relative bg-white z-50 text-black">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
                     <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -74,7 +74,7 @@ export default function Header() {
                             <MenuIcon className="h-6 w-6" aria-hidden="true" />
                         </Popover.Button>
                     </div>
-                    <Popover.Group as="nav" className="hidden md:flex space-x-10">
+                    <Popover.Group as="nav" className="hidden md:flex md:items-center space-x-10">
                         <Popover className="relative">
                             {({ open }) => (
                                 <>
@@ -185,15 +185,14 @@ export default function Header() {
                                 </>
                             )}
                         </Popover>
+                            <Link
+                                to="/contact"
+                                className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 shadow-sm font-normal text-white text-sm bg-accent hover:bg-indigo-700"
+                            >
+                                Contact Us
+                            </Link>
                     </Popover.Group>
-                    <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                        <Link
-                            to="/contact"
-                            className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 rounded-md shadow-sm font-normal text-white text-sm bg-accent hover:bg-indigo-700"
-                        >
-                            Contact Us
-                        </Link>
-                    </div>
+
                 </div>
             </div>
 
