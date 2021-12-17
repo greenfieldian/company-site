@@ -12,8 +12,12 @@ class LocationTemplate extends Component {
             <Layout>
                 <div>
                     <div>
-                        <div>
-                            <img src={location.heroImage.file.url} className="h-2/4 w-full"/>
+                        <div className="h-screen">
+                            <img src={location.heroImage.file.url} className="md:h-screen w-full"/>
+                        </div>
+                        <div className="max-w-xl mx-auto">
+                            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl text-center">About This Office</h2>
+                            <p >{location.description.description}</p>
                         </div>
                     </div>
                 </div>
@@ -36,6 +40,9 @@ query LocationPageQuery($slug: String!) {
           file {
             url
           }
+        }
+        description {
+            description
         }
     }
 }
