@@ -8,7 +8,7 @@ const Layout =({children}) =>{
         < div className="">
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>Pussy Freak</title>
+                <title>Shockmouse Media</title>
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
                 <Header />

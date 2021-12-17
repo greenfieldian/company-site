@@ -11,6 +11,8 @@ module.exports = {
       'blue-300': '#020d32',
       'accent': '#17BDB4',
       'doughnuts-cream': '#fffcf6',
+      'doughnuts-green': '#8cc63f',
+      'travel-teal': '#54807B',
     },
     extend: {},
   },
