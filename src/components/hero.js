@@ -4,7 +4,7 @@ class Hero extends Component {
     render() {
         return (
             <div>
-                <main className="lg:relative">
+                <main className="lg:relative text-black">
                     <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-36 lg:text-left">
                         <div className="px-4 sm:px-8 text-center max-w-3xl mx-auto">
                             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl">

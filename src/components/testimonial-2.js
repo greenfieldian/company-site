@@ -15,7 +15,7 @@ class Testimonial2 extends Component {
                         <blockquote className="mt-10">
                             <div className="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-900">
                                 <p>
-                                    &ldquo;We've had issues with agencies in the past, so we were naturally hesitant to work with one again. The Shockmouse Media team understood and respected our concerns, patiently guiding us through our website re-design. As a result, we have an incredible site, and they now have a lifelong customer.  &rdquo;
+                                    &ldquo;We've had issues with agencies in the past, so we were naturally hesitant to work with one again. The Shockmouse Media team understood and respected our concerns, patiently guiding us through our website re-design. As a result, we have an incredible site, and they have a lifelong customer.  &rdquo;
                                 </p>
                             </div>
                             <footer className="mt-8">

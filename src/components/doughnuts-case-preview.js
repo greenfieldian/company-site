@@ -47,7 +47,7 @@ class DoughnutsCasePreview extends Component {
                                 feugiat viverra eleifend fusce orci in quis amet.
                             </p>
                             <div className="w-1/2 mx-auto sm:mx-0">
-                                <Link className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 sm:w-auto">
+                                <Link className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium text-indigo-600 bg-white hover:bg-indigo-50 sm:w-auto">
                                     View Case Study
                                 </Link>
                             </div>

@@ -26,9 +26,10 @@ export default function ContactForm() {
                                 <input
                                     type="text"
                                     name="first-name"
+                                    placeholder="First Name"
                                     id="first-name"
                                     autoComplete="given-name"
-                                    className="py-3 px-4 block w-full focus:ring-indigo-500 focus:border-indigo-500 border shadow-sm rounded-md"
+                                    className="py-4 px-4 block w-full focus:border-black border-light-grey border shadow-sm placeholder-light-grey"
                                 />
                             </div>
                         </div>
@@ -40,9 +41,10 @@ export default function ContactForm() {
                                 <input
                                     type="text"
                                     name="last-name"
+                                    placeholder="Last Name"
                                     id="last-name"
                                     autoComplete="family-name"
-                                    className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border rounded-md"
+                                    className="py-4 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border border-light-grey placeholder-light-grey"
                                 />
                             </div>
                         </div>
@@ -54,9 +56,10 @@ export default function ContactForm() {
                                 <input
                                     type="text"
                                     name="company"
+                                    placeholder="Company"
                                     id="company"
                                     autoComplete="organization"
-                                    className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border rounded-md"
+                                    className="py-4 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border border-light-grey placeholder-light-grey"
                                 />
                             </div>
                         </div>
@@ -68,9 +71,10 @@ export default function ContactForm() {
                                 <input
                                     id="email"
                                     name="email"
+                                    placeholder="Email"
                                     type="email"
                                     autoComplete="email"
-                                    className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border rounded-md"
+                                    className="py-4 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border border-light-grey placeholder-light-grey"
                                 />
                             </div>
                         </div>
@@ -78,27 +82,13 @@ export default function ContactForm() {
                             <label htmlFor="phone-number" className="block text-sm font-medium text-gray-700">
                                 Phone Number
                             </label>
-                            <div className="mt-1 relative rounded-md shadow-sm">
-                                <div className="absolute inset-y-0 left-0 flex items-center">
-                                    <label htmlFor="country" className="sr-only">
-                                        Country
-                                    </label>
-                                    <select
-                                        id="country"
-                                        name="country"
-                                        className="h-full py-0 pl-4 pr-8 border-transparent bg-transparent text-gray-500 border focus:ring-indigo-500 focus:border-indigo-500 rounded-md"
-                                    >
-                                        <option>US</option>
-                                        <option>CA</option>
-                                        <option>EU</option>
-                                    </select>
-                                </div>
+                            <div className="mt-1 relative shadow-sm">
                                 <input
                                     type="text"
                                     name="phone-number"
                                     id="phone-number"
                                     autoComplete="tel"
-                                    className="py-3 px-8 block w-full pl-24 focus:ring-indigo-500 focus:border-indigo-500 border rounded-md"
+                                    className="py-4 px-4 block w-full focus:ring-indigo-500 focus:border-indigo-500 border border-light-grey placeholder-light-grey"
                                     placeholder="+1 (555) 987-6543"
                                 />
                             </div>
@@ -111,8 +101,9 @@ export default function ContactForm() {
                 <textarea
                     id="message"
                     name="message"
+                    placeholder="Your Message..."
                     rows={4}
-                    className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"
+                    className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border border-light-grey placeholder-light-grey"
                     defaultValue={''}
                 />
                             </div>
@@ -125,7 +116,7 @@ export default function ContactForm() {
                                         onChange={setAgreed}
                                         className={classNames(
                                             agreed ? 'bg-indigo-600' : 'bg-gray-200',
-                                            'relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                                            'relative inline-flex flex-shrink-0 h-6 w-11 border border-light-grey rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
                                         )}
                                     >
                                         <span className="sr-only">Agree to policies</span>
@@ -156,7 +147,7 @@ export default function ContactForm() {
                         <div className="sm:col-span-2">
                             <button
                                 type="submit"
-                                className="w-full inline-flex items-center justify-center px-6 py-3 border rounded-md shadow-sm text-base font-medium hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                className="w-full inline-flex items-center justify-center px-6 py-4 shadow-sm text-base font-medium hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 bg-blue-300 text-white"
                             >
                                 Let's talk
                             </button>
