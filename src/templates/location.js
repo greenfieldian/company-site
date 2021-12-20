@@ -12,8 +12,10 @@ class LocationTemplate extends Component {
             <Layout>
                 <div>
                     <div>
-                        <div className="h-screen">
+                        <div className="h-screen relative">
+                            <div className="bg-black md:h-screen opacity-25 absolute top-0"/>
                             <img src={location.heroImage.file.url} className="md:h-screen w-full"/>
+                            <div className="bg-black"/>
                         </div>
                         <div className="max-w-xl mx-auto">
                             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl text-center">About This Office</h2>

@@ -33,11 +33,10 @@ class RealEstateCasePreview extends Component {
                                 />
                             </div>
                             <div>
-                                <h2 className="uppercase text-5xl tracking-tighter text-5xl sm:text-7xl">Hustle Never Stops</h2>
+                                <h2 className="uppercase text-5xl tracking-tighter text-5xl sm:text-7xl">Keep It Silly</h2>
                             </div>
                             <p className="mt-5 text-lg text-gray-300 md:mr-48">
-                                Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis in viverra tristique sem. Ornare
-                                feugiat viverra eleifend fusce orci in quis amet.
+                                The renowned illustration pack needed a growth partner who knew how to scale. We provided a helping hand.
                             </p>
                             <div className="w-1/2 mx-auto sm:mx-0">
                                 <Link className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border-2 border-transparent text-base font-medium text-indigo-600 hover:bg-indigo-50 sm:w-auto">
