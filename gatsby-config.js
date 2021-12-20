@@ -10,6 +10,7 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-postcss",
+    "@contentful/gatsby-transformer-contentful-richtext",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -17,6 +18,17 @@ module.exports = {
         path: "./src/images/",
       },
       __key: "images",
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        // Footnotes mode (default: true)
+        footnotes: true,
+        // GitHub Flavored Markdown mode (default: true)
+        gfm: true,
+        // Plugins configs
+        plugins: [],
+      },
     },
     {
       resolve: `gatsby-source-contentful`,

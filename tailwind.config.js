@@ -9,6 +9,8 @@ module.exports = {
       'night': '#000000',
       'light-gray': '#F2F5F8',
       'light-grey': 'rgba(0, 0, 0, 0.2)',
+      'dark-gray': '#636363',
+      'background-gray': '#f5f5f5',
       'blue': '#071133',
       'blue-500': '#000622',
       'blue-300': '#020d32',

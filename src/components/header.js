@@ -41,9 +41,27 @@ const services = [
 
 const resources = [
     {
+        name: 'About Us',
+        description: 'Get all of your questions answered in our forums or contact support.',
+        href: '/about-us',
+        icon: SupportIcon,
+    },
+    {
         name: 'Our Blog',
         description: 'Get all of your questions answered in our forums or contact support.',
         href: '/blog',
+        icon: SupportIcon,
+    },
+    {
+        name: 'Careers',
+        description: 'Get all of your questions answered in our forums or contact support.',
+        href: '/careers',
+        icon: SupportIcon,
+    },
+    {
+        name: 'Affiliate Program',
+        description: 'Get all of your questions answered in our forums or contact support.',
+        href: '/affiliate-program',
         icon: SupportIcon,
     },
 ]
@@ -217,7 +235,7 @@ export default function Header() {
                                     />
                                 </div>
                                 <div className="-mr-2">
-                                    <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                    <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100">
                                         <span className="sr-only">Close menu</span>
                                         <XIcon className="h-6 w-6" aria-hidden="true" />
                                     </Popover.Button>
@@ -240,13 +258,6 @@ export default function Header() {
                         </div>
                         <div className="py-6 px-5 space-y-6">
                             <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                                    Pricing
-                                </a>
-
-                                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                                    Docs
-                                </a>
                                 {resources.map((item) => (
                                     <a
                                         key={item.name}
@@ -258,17 +269,10 @@ export default function Header() {
                                 ))}
                             </div>
                             <div>
-                                <a
-                                    href="#"
-                                    className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
-                                >
-                                    Sign up
-                                </a>
                                 <p className="mt-6 text-center text-base font-medium text-gray-500">
-                                    Existing customer?{' '}
-                                    <a href="#" className="text-indigo-600 hover:text-indigo-500">
-                                        Sign in
-                                    </a>
+                                    <Link to="/contact" className="text-indigo-600 hover:text-indigo-500">
+                                        Contact Us
+                                    </Link>
                                 </p>
                             </div>
                         </div>

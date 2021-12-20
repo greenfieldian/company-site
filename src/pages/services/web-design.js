@@ -3,8 +3,9 @@ import {Link} from "gatsby";
 import Layout from "../../components/global/layout";
 import {
     InboxIcon,
-    TrashIcon,
+    TrashIcon, UserGroupIcon,
     UsersIcon,
+
 } from '@heroicons/react/outline'
 import ContactForm from "../../components/contact-form";
 import TravelMockup from "../../images/travel-mockup.png";
@@ -15,6 +16,7 @@ import HTML from "../../images/html.webp"
 import CSS from "../../images/css.webp"
 import Rails from "../../images/rails.webp"
 import NodeJS from "../../images/node-js.webp"
+import WebsitesImage from "../../images/websites-image.png";
 
 const features = [
     {
@@ -32,6 +34,21 @@ const features = [
         description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
         icon: TrashIcon,
     },
+    {
+        name: 'Complete Product Teams',
+        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+        icon: UserGroupIcon,
+    },
+    {
+        name: 'Quality Assurance',
+        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+        icon: TrashIcon,
+    },
+    {
+        name: 'World-class UX/UI',
+        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+        icon: TrashIcon,
+    },
 ]
 const metrics = [
     { id: 1, stat: '8K+', emphasis: 'Companies', rest: 'use laoreet amet lacus nibh integer quis.' },
@@ -44,46 +61,32 @@ class WebDesign extends Component {
     render() {
         return (
             <Layout>
-                <main>
+                <main className="overflow-hidden">
                     {/* Hero section */}
                     <div>
                         <div>
                             {/* Hero card */}
                             <div className="relative">
-                                <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
+                                <div className="absolute inset-x-0 bottom-0 h-1/2" />
                                 <div className="mx-auto">
                                     <div className="relative sm:overflow-hidden">
-                                        <div className="absolute inset-0">
-                                            <img
-                                                className="h-full w-full object-cover"
-                                                src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
-                                                alt="People working on laptops"
-                                            />
-                                            <div className="absolute inset-0 bg-indigo-700 mix-blend-multiply" />
-                                        </div>
                                         <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8 lg:max-w-7xl sm:mx-auto">
-                                            <h1 className="text-left text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-                                                <span className="block text-white">Take control of your</span>
-                                                <span className="block text-indigo-200">customer support</span>
+                                            <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                                                <span className="block">Take control of your</span>
+                                                <span className="block">customer support</span>
                                             </h1>
-                                            <p className="mt-6 max-w-lg text-left text-xl text-indigo-200 sm:max-w-3xl">
+                                            <p className="mt-6 mx-auto max-w-lg text-center text-xl text-indigo-200 sm:max-w-3xl">
                                                 Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
                                                 amet fugiat veniam occaecat fugiat aliqua.
                                             </p>
-                                            <div className="mt-10 max-w-sm  sm:max-w-none sm:flex ">
-                                                <div className="space-y-4 sm:space-y-0 sm:inline-grid sm:grid-cols-2 sm:gap-5">
-                                                    <a
-                                                        href="#"
-                                                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8"
+                                            <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex ">
+                                                <div className="space-y-4 sm:space-y-0 sm:mx-auto">
+                                                    <Link
+                                                        to="/contact"
+                                                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium shadow-sm text-indigo-700 bg-black hover:bg-indigo-50 sm:px-8"
                                                     >
                                                         Get started
-                                                    </a>
-                                                    <a
-                                                        href="#"
-                                                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8"
-                                                    >
-                                                        Live demo
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -95,27 +98,60 @@ class WebDesign extends Component {
 
                     {/* Approach Text */}
                     <section>
-                        <div className="max-w-3xl mx-auto py-12 text-center">
-                            <div className="mb-5">
-                                <h2>Our Approach</h2>
+                        <div className="px-4 py-8 sm:px-6 sm:py-16 lg:py-16 lg:px-8 lg:max-w-7xl sm:mx-auto lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+                            <div className="">
+                                <div className="mb-5">
+                                    <h2>One scalable team for start-to-finish development</h2>
+                                </div>
+                                <div className="">
+                                    <p className="font-light">Beneath the surface, there are countless factors that support the speed,
+                                        functionality, and security of your website. Our seasoned developers
+                                        understand the latest strategies to maximize the efficiency of your website
+                                        while including the features that you need. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <br/>
+                                    <p className="font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
                             </div>
-                            <div className="text-center">
-                                <p className="text-3xl">Beneath the surface, there are countless factors that support the speed,
-                                    functionality, and security of your website. Our seasoned developers
-                                    understand the latest strategies to maximize the efficiency of your website
-                                    while including the features that you need.</p>
+                            <div className="mt-12 sm:mt-16 lg:mt-0">
+                                <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
+                                    <img
+                                        className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                                        src={WebsitesImage}
+                                        alt="Inbox user interface"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </section>
                     {/* Approach Text */}
 
+                    <section className="pb-24 pt-8 bg-white font-light">
+                        <div className="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+                            <h2 className="sr-only">A better way to send money.</h2>
+                            <dl className="space-y-10 text-center sm:text-left lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8">
+                                {features.map((feature) => (
+                                    <div key={feature.name} className="sm:flex">
+                                        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white mx-auto">
+                                            <feature.icon className="h-6 w-6 text-blue sm:mt-3 sm:mr-4" aria-hidden="true" />
+                                        </div>
+                                        <dt>
+                                            <p className="mt-5 text-lg leading-6 font-medium text-gray-900">{feature.name}</p>
+                                            <dd className="mt-2 text-base text-gray-500">{feature.description}</dd>
+                                        </dt>
+                                    </div>
+                                ))}
+                            </dl>
+                        </div>
+                    </section>
+
                     {/* Frameworks */}
                     <section className="bg-white">
                         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-                            <div className="text-center mb-5">
-                                <h2>Technology</h2>
+                            <div className="text-center mb-5 max-w-3xl mx-auto mb-24">
+                                <h2 className="text-3xl md:text-4xl pb-8">Choose battle-tested web development services with community support over hype</h2>
+                                <p className="text-base sm:text-xl font-light">Whatever web applications you’re building, we got your back at every stage of web development, including web design. We’ve built a core system for a bank, an MVP marketplace sold for millions, and other 5☆ custom projects for 140+ companies worldwide. All in accordance with the client’s digital marketing strategy.</p>
                             </div>
-                            <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-6">
+                            <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-6 font-medium">
                                 <div className="col-span-1 flex flex-col justify-center md:col-span-2 lg:col-span-1 text-center">
                                     <div className="mx-auto">
                                         <img className="h-12 mb-3" src={HTML} alt="Tuple" />
@@ -152,7 +188,7 @@ class WebDesign extends Component {
                                         <p>Contentful</p>
                                     </div>
                                 </div>
-                                <div className="col-span-2 flex flex-col justify-center md:col-span-3 lg:col-span-1 text-center">
+                                <div className="col-span-1 flex flex-col justify-center md:col-span-3 lg:col-span-1 text-center">
                                     <div className="mx-auto">
                                         <img
                                             className="h-12 mb-3"
@@ -164,7 +200,7 @@ class WebDesign extends Component {
                                         <p>Ruby on Rails</p>
                                     </div>
                                 </div>
-                                <div className="col-span-2 flex flex-col justify-center md:col-span-3 lg:col-span-1 text-center">
+                                <div className="col-span-1 flex flex-col justify-center md:col-span-3 lg:col-span-1 text-center">
                                     <div className="mx-auto">
                                         <img
                                             className="h-12 mb-3"
@@ -180,27 +216,6 @@ class WebDesign extends Component {
                         </div>
                     </section>
                     {/* Frameworks */}
-
-                    {/* Additional Information */}
-                    <section className="py-12 bg-white">
-                        <div className="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-                            <h2 className="sr-only">A better way to send money.</h2>
-                            <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8">
-                                {features.map((feature) => (
-                                    <div key={feature.name}>
-                                        <dt>
-                                            <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                                                <feature.icon className="h-6 w-6" aria-hidden="true" />
-                                            </div>
-                                            <p className="mt-5 text-lg leading-6 font-medium text-gray-900">{feature.name}</p>
-                                        </dt>
-                                        <dd className="mt-2 text-base text-gray-500">{feature.description}</dd>
-                                    </div>
-                                ))}
-                            </dl>
-                        </div>
-                    </section>
-                    {/* Additional Information */}
 
                     {/* Testimonial */}
                     <section className="py-12  overflow-hidden md:py-20 lg:py-24">
