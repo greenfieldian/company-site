@@ -10,43 +10,44 @@ import {
 import ContactForm from "../../components/contact-form";
 import TravelMockup from "../../images/travel-mockup.png";
 import Logo from "../../images/dnd-logo.png";
-import Contentful from "../../images/contentful.webp"
-import Gatsby from "../../images/gatsby.webp"
-import HTML from "../../images/html.webp"
-import CSS from "../../images/css.webp"
-import Rails from "../../images/rails.webp"
-import NodeJS from "../../images/node-js.webp"
-import WebsitesImage from "../../images/websites-image.png";
+import ReactNative from "../../images/react-native.webp"
+import Expo from "../../images/expo.webp"
+import AWS from "../../images/aws.webp"
+import Firebase from "../../images/firebase.webp"
+import Flutter from "../../images/flutter.webp"
+import Swift from "../../images/swift.webp"
+import AppsImage from "../../images/mobile-apps.png";
 
 const features = [
     {
-        name: 'SEO Optimization',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+        name: 'Business-tailored architecture',
+        description: 'Software architecture have to follow business logic and provide scalability for future growth. Our team knows it instinctively.',
         icon: InboxIcon,
     },
     {
         name: 'Built to Scale',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+        description: 'Web development services full of custom solutions optimized for efficiency, flexibility and deployment speed',
         icon: UsersIcon,
     },
     {
         name: '360° Support',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+        description: 'We build websites from the ground up, including hosting, page navigation,\n' +
+            'features, SEO, and more. From A to Z, we cover all of your bases.',
         icon: TrashIcon,
     },
     {
         name: 'Complete Product Teams',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+        description: 'Enjoy access to our Product Designers, Project Managers, QA Engineers, Business Analysts, DevOps, or Full-stack developers.',
         icon: UserGroupIcon,
     },
     {
         name: 'Quality Assurance',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+        description: 'We do QA before each deploy through manual and automated tests that catch bugs, performance issues, and conversion blockers.',
         icon: TrashIcon,
     },
     {
         name: 'World-class UX/UI',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+        description: 'Designed to help your business with user adoption.',
         icon: TrashIcon,
     },
 ]
@@ -70,20 +71,19 @@ class MobileApps extends Component {
                                 <div className="absolute inset-x-0 bottom-0 h-1/2" />
                                 <div className="mx-auto">
                                     <div className="relative sm:overflow-hidden">
-                                        <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8 lg:max-w-7xl sm:mx-auto">
-                                            <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-                                                <span className="block">Take control of your</span>
-                                                <span className="block">customer support</span>
+                                        <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8 lg:max-w-7xl sm:mx-auto text-center">
+                                            <span className="uppercase text-sm font-medium">Mobile App Development</span>
+                                            <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                                                <span className="block">Mobile development that accelerates product growth</span>
                                             </h1>
                                             <p className="mt-6 mx-auto max-w-lg text-center text-xl text-indigo-200 sm:max-w-3xl">
-                                                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
-                                                amet fugiat veniam occaecat fugiat aliqua.
+                                                By understanding your goals, staying consistent with your brand, and maintaining transparency throughout the entire process, we build secure, functional, and user-friendly apps.
                                             </p>
                                             <div className="mt-10 max-w-sm sm:mx-auto sm:max-w-none sm:flex ">
                                                 <div className="space-y-4 sm:space-y-0 sm:mx-auto">
                                                     <Link
                                                         to="/contact"
-                                                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium shadow-sm text-indigo-700 bg-black hover:bg-indigo-50 sm:px-8"
+                                                        className="flex items-center justify-center px-3 py-2 border border-blue text-blue rounded-3xl text-base font-medium shadow-sm hover:bg-indigo-50 sm:px-6"
                                                     >
                                                         Get started
                                                     </Link>
@@ -101,7 +101,7 @@ class MobileApps extends Component {
                         <div className="px-4 py-8 sm:px-6 sm:py-16 lg:py-16 lg:px-8 lg:max-w-7xl sm:mx-auto lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
                             <div className="">
                                 <div className="mb-5">
-                                    <h2>One scalable team for start-to-finish development</h2>
+                                    <h2>Conception-to-launch mobile development services</h2>
                                 </div>
                                 <div className="">
                                     <p className="font-light">Beneath the surface, there are countless factors that support the speed,
@@ -116,7 +116,7 @@ class MobileApps extends Component {
                                 <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                                     <img
                                         className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                                        src={WebsitesImage}
+                                        src={AppsImage}
                                         alt="Inbox user interface"
                                     />
                                 </div>
@@ -154,62 +154,66 @@ class MobileApps extends Component {
                             <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-6 font-medium">
                                 <div className="col-span-1 flex flex-col justify-center md:col-span-2 lg:col-span-1 text-center">
                                     <div className="mx-auto">
-                                        <img className="h-12 mb-3" src={HTML} alt="Tuple" />
+                                        <img className="h-12 mb-3" src={ReactNative} alt="Tuple" />
                                     </div>
                                     <div>
-                                        <p>HTML 5</p>
+                                        <p>React Native</p>
                                     </div>
                                 </div>
                                 <div className="col-span-1 flex flex-col justify-center md:col-span-2 lg:col-span-1 text-center">
                                     <div className="mx-auto">
-                                        <img className="h-12 mb-3" src={CSS} alt="Mirage" />
+                                        <img className="h-12 mb-3" src={Firebase} alt="Mirage" />
                                     </div>
                                     <div>
-                                        <p>CSS3</p>
-                                    </div>
-                                </div>
-                                <div className="col-span-1 flex flex-col justify-center md:col-span-2 lg:col-span-1 text-center">
-                                    <div className="mx-auto">
-                                        <img className="h-12 mb-3" src={Gatsby} alt="StaticKit" />
-                                    </div>
-                                    <div>
-                                        <p>Gatsby JS</p>
+                                        <p>Firebase</p>
                                     </div>
                                 </div>
                                 <div className="col-span-1 flex flex-col justify-center md:col-span-3 lg:col-span-1 text-center">
                                     <div className="mx-auto">
                                         <img
                                             className="h-12 mb-3"
-                                            src={Contentful}
+                                            src={AWS}
                                             alt="Transistor"
                                         />
                                     </div>
                                     <div>
-                                        <p>Contentful</p>
+                                        <p>Amazon Web Services</p>
                                     </div>
                                 </div>
                                 <div className="col-span-1 flex flex-col justify-center md:col-span-3 lg:col-span-1 text-center">
                                     <div className="mx-auto">
                                         <img
                                             className="h-12 mb-3"
-                                            src={Rails}
-                                            alt="Workcation"
+                                            src={Expo}
+                                            alt="Transistor"
                                         />
                                     </div>
                                     <div>
-                                        <p>Ruby on Rails</p>
+                                        <p>Expo</p>
                                     </div>
                                 </div>
                                 <div className="col-span-1 flex flex-col justify-center md:col-span-3 lg:col-span-1 text-center">
                                     <div className="mx-auto">
                                         <img
                                             className="h-12 mb-3"
-                                            src={NodeJS}
+                                            src={Flutter}
                                             alt="Workcation"
                                         />
                                     </div>
                                     <div>
-                                        <p>Node JS</p>
+                                        <p>Flutter</p>
+                                    </div>
+                                </div>
+                                <div className="col-span-1 flex flex-col justify-center md:col-span-3 lg:col-span-1 text-center">
+                                    <div className="mx-auto">
+                                        <img
+                                            className="h-12 mb-3"
+                                            src={Swift}
+                                            alt="Workcation"
+                                        />
+                                    </div>
+                                    <div>
+                                        <p>Swift</p>
                                     </div>
                                 </div>
                             </div>

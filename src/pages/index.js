@@ -18,34 +18,6 @@ import ShopifyImage from "../images/shopify-image.png"
 import ContactForm from "../components/contact-form";
 
 
-
-const features = [
-    {
-        name: 'Faster Websites',
-        description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: GlobeAltIcon,
-    },
-    {
-        name: 'Real-Time Project Tracking',
-        description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: ScaleIcon,
-    },
-    {
-        name: 'Optimized for S.E.O.',
-        description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: LightningBoltIcon,
-    },
-    {
-        name: 'Endless Integrations',
-        description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: LightningBoltIcon,
-    },
-]
-
 class IndexPage extends Component {
   render() {
     return (
@@ -85,7 +57,7 @@ class IndexPage extends Component {
                                       <div className="mt-6">
                                           <Link
                                               to="/services/web-design"
-                                              className="inline-flex px-4 py-2 border border-transparent text-base font-medium shadow-sm"
+                                              className="inline-flex px-4 py-2 border border-transparent text-base font-medium shadow-sm rounded-3xl"
                                           >
                                               Learn More
                                           </Link>
@@ -126,7 +98,7 @@ class IndexPage extends Component {
                                       <div className="mt-6">
                                           <Link
                                               to="/services/mobile-apps"
-                                              className="inline-flex px-4 py-2 border border-transparent text-base font-medium shadow-sm"
+                                              className="inline-flex px-4 py-2 border border-transparent text-base font-medium shadow-sm rounded-3xl"
                                           >
                                               Learn More
                                           </Link>
@@ -167,7 +139,7 @@ class IndexPage extends Component {
                                       <div className="mt-6">
                                           <Link
                                               to="/services/shopify"
-                                              className="inline-flex px-4 py-2 border border-transparent text-base font-medium shadow-sm"
+                                              className="inline-flex px-4 py-2 border border-transparent text-base font-medium shadow-sm rounded-3xl"
                                           >
                                               Learn More
                                           </Link>
