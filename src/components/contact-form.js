@@ -115,7 +115,7 @@ export default function ContactForm() {
                                         checked={agreed}
                                         onChange={setAgreed}
                                         className={classNames(
-                                            agreed ? 'bg-indigo-600' : 'bg-gray-200',
+                                            agreed ? 'bg-accent' : 'bg-light-gray',
                                             'relative inline-flex flex-shrink-0 h-6 w-11 border border-light-grey rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
                                         )}
                                     >
@@ -132,11 +132,11 @@ export default function ContactForm() {
                                 <div className="ml-3">
                                     <p className="text-base text-gray-500">
                                         By selecting this, you agree to the{' '}
-                                        <Link to="/legal/privacy-policy" className="font-medium text-gray-700 underline">
+                                        <Link to="/legal/privacy-policy" className="font-medium text-accent underline">
                                             Privacy Policy
                                         </Link>{' '}
                                         and{' '}
-                                        <Link to="/legal/cookies-policy" className="font-medium text-gray-700 underline">
+                                        <Link to="/legal/cookies-policy" className="font-medium text-accent underline">
                                             Cookie Policy
                                         </Link>
                                         .
@@ -147,9 +147,9 @@ export default function ContactForm() {
                         <div className="sm:col-span-2">
                             <button
                                 type="submit"
-                                className="w-full rounded-3xl inline-flex items-center justify-center px-6 py-3 shadow-sm text-base font-medium hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 bg-blue-300 text-white"
+                                className="w-full sm:w-auto rounded-3xl inline-flex items-center justify-center px-6 py-3 shadow-sm text-base font-medium hover:bg-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent bg-accent text-white"
                             >
-                                Let's talk
+                                Send us a message
                             </button>
                         </div>
                     </form>

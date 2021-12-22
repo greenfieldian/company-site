@@ -71,22 +71,20 @@ class WebDesign extends Component {
                                 <div className="mx-auto">
                                     <div className="relative sm:overflow-hidden">
                                         <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8 lg:max-w-7xl sm:mx-auto text-center">
-                                            <span className="uppercase text-sm font-medium">Web Development</span>
+                                            <span className="uppercase text-sm font-medium text-accent">Web Development</span>
                                             <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-                                                <span className="block">Take control of your</span>
-                                                <span className="block">customer support</span>
+                                                <span className="block">Deliver great user experiences through our proven web development strategies.</span>
                                             </h1>
                                             <p className="mt-6 mx-auto max-w-lg text-center text-xl text-indigo-200 sm:max-w-3xl">
-                                                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
-                                                amet fugiat veniam occaecat fugiat aliqua.
+                                                We’ve helped hundreds of companies transform their digital presence. Develop with confidence with our proven team of web development specialists.
                                             </p>
                                             <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex ">
                                                 <div className="space-y-4 sm:space-y-0 sm:mx-auto">
                                                     <Link
                                                         to="/contact"
-                                                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium shadow-sm text-indigo-700 bg-black hover:bg-indigo-50 sm:px-8"
+                                                        className="flex items-center justify-center px-3 py-2 bg-accent text-white rounded-3xl text-base font-medium shadow-sm hover:bg-blue sm:px-6"
                                                     >
-                                                        Get started
+                                                        Book a free consultation
                                                     </Link>
                                                 </div>
                                             </div>
@@ -133,7 +131,7 @@ class WebDesign extends Component {
                                 {features.map((feature) => (
                                     <div key={feature.name} className="sm:flex">
                                         <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white mx-auto">
-                                            <feature.icon className="h-6 w-6 text-blue sm:mt-3 sm:mr-4" aria-hidden="true" />
+                                            <feature.icon className="h-6 w-6 text-accent sm:mt-3 sm:mr-4" aria-hidden="true" />
                                         </div>
                                         <dt>
                                             <p className="mt-5 text-lg leading-6 font-medium text-gray-900">{feature.name}</p>
