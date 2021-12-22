@@ -3,20 +3,14 @@ import { Fragment } from 'react'
 import {Link} from 'gatsby'
 import { Popover, Transition } from '@headlessui/react'
 import {
-    BookmarkAltIcon,
-    CalendarIcon,
     ChartBarIcon,
     CursorClickIcon,
     MenuIcon,
-    PhoneIcon,
-    PlayIcon,
-    RefreshIcon,
-    ShieldCheckIcon,
     SupportIcon,
-    ViewGridIcon,
     XIcon,
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
+import Logo from '../images/logo.png'
 
 const services = [
     {
@@ -57,7 +51,7 @@ export default function Header() {
                             <span className="sr-only">Workflow</span>
                             <img
                                 className="h-8 w-auto sm:h-10"
-                                src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                                src={Logo}
                                 alt=""
                             />
                         </Link>

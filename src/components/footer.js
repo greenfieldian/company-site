@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import Logo from '../images/logo.png'
+
 const navigation = {
     solutions: [
         { name: 'Websites', href: '/services/web-design' },
@@ -100,7 +102,7 @@ export default function Footer() {
                     <div className="space-y-8 xl:col-span-1">
                         <img
                             className="h-10"
-                            src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg"
+                            src={Logo}
                             alt="Company name"
                         />
                         <p className="text-gray-500 text-base">

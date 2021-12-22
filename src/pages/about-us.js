@@ -6,7 +6,14 @@ import CallToAction from "../components/cta";
 import {GlobeAltIcon, LightningBoltIcon, ScaleIcon, ArrowRightIcon} from "@heroicons/react/outline";
 import {graphql} from "gatsby";
 import get from "lodash/get";
+
 import WebsitesImage from "../images/websites-image.png";
+import Google from '../images/google-cert.png';
+import WPEngine from '../images/wp-engine.webp'
+import AWS from '../images/aws.webp';
+import Shopify from '../images/shopify-partner.webp';
+import Mailchimp from '../images/mailchimp-partner.webp';
+import Hubspot from '../images/hubspot.webp';
 
 const services = [
     {
@@ -130,6 +137,79 @@ class AboutUs extends Component {
                     </div>
                 </section>
                 {/* Approach */}
+
+                {/* Frameworks */}
+                <section className="bg-white">
+                    <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+                        <div className="text-center mb-5 max-w-3xl mx-auto mb-24">
+                            <h2 className="text-3xl md:text-4xl pb-8">Choose battle-tested web development services with community support over hype</h2>
+                            <p className="text-base sm:text-xl font-light">Whatever web applications you’re building, we got your back at every stage of web development, including web design. We’ve built a core system for a bank, an MVP marketplace sold for millions, and other 5☆ custom projects for 140+ companies worldwide. All in accordance with the client’s digital marketing strategy.</p>
+                        </div>
+                        <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-6 font-medium">
+                            <div className="col-span-1 flex flex-col justify-center md:col-span-2 lg:col-span-1 text-center">
+                                <div className="mx-auto">
+                                    <img className="h-12 mb-3" src={Google} alt="Tuple" />
+                                </div>
+                                <div>
+                                    <p>Google <br/> Certified Agency</p>
+                                </div>
+                            </div>
+                            <div className="col-span-1 flex flex-col justify-center md:col-span-2 lg:col-span-1 text-center">
+                                <div className="mx-auto">
+                                    <img className="h-12 mb-3" src={WPEngine} alt="Mirage" />
+                                </div>
+                                <div>
+                                    <p>WP Engine <br /> Partners</p>
+                                </div>
+                            </div>
+                            <div className="col-span-1 flex flex-col justify-center md:col-span-2 lg:col-span-1 text-center">
+                                <div className="mx-auto">
+                                    <img className="h-12 mb-3" src={AWS} alt="StaticKit" />
+                                </div>
+                                <div>
+                                    <p>AWS <br /> Partners </p>
+                                </div>
+                            </div>
+                            <div className="col-span-1 flex flex-col justify-center md:col-span-3 lg:col-span-1 text-center">
+                                <div className="mx-auto">
+                                    <img
+                                        className="h-12 mb-3"
+                                        src={Shopify}
+                                        alt="Transistor"
+                                    />
+                                </div>
+                                <div>
+                                    <p>Shopify <br />Partners</p>
+                                </div>
+                            </div>
+                            <div className="col-span-1 flex flex-col justify-center md:col-span-3 lg:col-span-1 text-center">
+                                <div className="mx-auto">
+                                    <img
+                                        className="h-12 mb-3"
+                                        src={Mailchimp}
+                                        alt="Workcation"
+                                    />
+                                </div>
+                                <div>
+                                    <p>Mailchimp <br/>Partner Agency</p>
+                                </div>
+                            </div>
+                            <div className="col-span-1 flex flex-col justify-center md:col-span-3 lg:col-span-1 text-center">
+                                <div className="mx-auto">
+                                    <img
+                                        className="h-12 mb-3"
+                                        src={Hubspot}
+                                        alt="Workcation"
+                                    />
+                                </div>
+                                <div>
+                                    <p>Hubspot <br/>Certified Partner</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {/* Frameworks */}
 
                 {/* Service Offerings */}
                 <div className="py-12 bg-white">
