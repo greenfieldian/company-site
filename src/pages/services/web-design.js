@@ -70,8 +70,9 @@ class WebDesign extends Component {
                                 <div className="absolute inset-x-0 bottom-0 h-1/2" />
                                 <div className="mx-auto">
                                     <div className="relative sm:overflow-hidden">
-                                        <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8 lg:max-w-7xl sm:mx-auto">
-                                            <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                                        <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8 lg:max-w-7xl sm:mx-auto text-center">
+                                            <span className="uppercase text-sm font-medium">Web Development</span>
+                                            <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
                                                 <span className="block">Take control of your</span>
                                                 <span className="block">customer support</span>
                                             </h1>

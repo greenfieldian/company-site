@@ -36,7 +36,7 @@ class BlogPostTemplate extends Component {
                             dangerouslySetInnerHTML={{__html: post.body.childMarkdownRemark.html}}
                         />
                     </div>
-                    <div>
+                    {/*<div>
                         <aside>
                             <div>
                                 <a><FaLinkedin /></a>
@@ -45,7 +45,7 @@ class BlogPostTemplate extends Component {
                                 <a><FaEnvelope /></a>
                             </div>
                         </aside>
-                    </div>
+                    </div>*/}
                 </section>
 
                 <NewsletterCTA />

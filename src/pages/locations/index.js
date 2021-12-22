@@ -23,17 +23,20 @@ class Index extends Component {
                 </section>
 
                 <section>
-                    <div className="bg-light-gray">
+                    <div className="">
                         <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-                            <dl className="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
+                            <dl className="sm:space-y-0 grid grid-cols-2 gap-4 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
                                 {locations.map((location) => (
-                                    <div key={location.node.title} className="relative">
+                                    <div key={location.node.title} className="relative mb-3 ">
                                         <Link to={`/locations/${location.node.slug}`}>
+                                            <div className="mb-3">
+                                                <img src={location.node.heroImage.file.url} className="h-44 rounded w-full"/>
+                                            </div>
                                             <dt>
-                                                <p className="ml-9 text-lg leading-6 font-medium text-gray-900 font-bold">{location.node.title}</p>
+                                                <p className="text-lg leading-6 font-medium text-gray-900 font-bold">{location.node.title}</p>
                                             </dt>
-                                            <dd className="mt-2 ml-9 text-base text-gray-500">{location.node.address}</dd>
-                                            <dd className="mt-2 ml-9 text-base text-gray-500">{location.node.city}</dd>
+                                            <dd className="mt-2 text-base text-gray-500">{location.node.address}</dd>
+                                            <dd className="mt-2 text-base text-gray-500">{location.node.city}</dd>
                                         </Link>
                                     </div>
                                 ))}
@@ -58,6 +61,11 @@ query LocationIndexQuery {
             address
             city
             slug
+            heroImage {
+              file {
+                url
+              }
+            }
           }
         }
     }
