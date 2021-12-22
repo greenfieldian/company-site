@@ -8,7 +8,7 @@ export default ({ article }) => (
         <div>
             <div className="mb-5">
                 <Link to={`/blog/${article.slug}`}>
-                    <img src={article.featuredImage.file.url} className="max-h-48 h-48 w-full"/>
+                    <img src={article.featuredImage.file.url} className="max-h-48 h-48 w-full rounded"/>
                 </Link>
             </div>
             <div>
@@ -17,7 +17,7 @@ export default ({ article }) => (
                 </h3>
                 <div className="mt-3 text-xs text-dark-gray flex items-center">
                     <time className="mr-5">{article.postDate}</time>
-                    <div className="relative flex items-center p-1 bg-background-gray">
+                    <div className="relative flex items-center p-1 bg-background-gray rounded">
                         <span className="absolute w-1.5 h-1.5 block bg-blue rounded-full"></span>
                         <p className="ml-3">{article.category.name}</p>
                     </div>

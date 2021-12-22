@@ -14,7 +14,7 @@ module.exports = {
       'blue': '#071133',
       'blue-500': '#000622',
       'blue-300': '#020d32',
-      'accent': '#17BDB4',
+      'accent': '#2253F2',
       'doughnuts-cream': '#fffcf6',
       'doughnuts-green': '#8cc63f',
       'travel-teal': '#54807B',
