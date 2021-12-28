@@ -127,7 +127,7 @@ export default function Header() {
 
                             <Link
                                 to="/contact"
-                                className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 shadow-sm font-normal text-white text-sm ring-accent border-2 border-accent text-accent hover:bg-indigo-700 rounded-3xl"
+                                className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 shadow-sm font-normal text-white text-sm ring-accent border-2 border-accent text-accent hover:bg-accent hover:text-white rounded-3xl"
                             >
                                 Contact Us
                             </Link>
@@ -192,7 +192,7 @@ export default function Header() {
                             </div>
                             <div>
                                 <p className="mt-6 text-center text-base font-medium text-gray-500">
-                                    <Link to="/contact" className="text-indigo-600 hover:text-indigo-500">
+                                    <Link to="/contact" className="text-indigo-600 hover:bg-accent hover:text-white">
                                         Contact Us
                                     </Link>
                                 </p>

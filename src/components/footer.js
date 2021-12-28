@@ -22,8 +22,8 @@ const navigation = {
         { name: 'Affiliate Program', href: '/affiliate-program' }
     ],
     legal: [
-        { name: 'Cookies Policy', href: '/legal/cookie-policy' },
-        { name: 'Privacy', href: '/legal/privacy-policy' },
+        { name: 'Cookies Policy', href: '/legal/cookies-policy' },
+        { name: 'Privacy Policy', href: '/legal/privacy-policy' },
         { name: 'Terms', href: '/legal/terms-conditions' },
     ],
     social: [
