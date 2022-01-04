@@ -4,10 +4,12 @@ import {Link} from 'gatsby'
 import { Popover, Transition } from '@headlessui/react'
 import {
     ChartBarIcon,
-    CursorClickIcon,
+    DesktopComputerIcon,
     MenuIcon,
     SupportIcon,
     XIcon,
+    ShoppingCartIcon,
+    DeviceMobileIcon,
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import Logo from '../images/logo.png'
@@ -17,13 +19,19 @@ const services = [
         name: 'Websites',
         description: 'Get a better understanding of where your traffic is coming from.',
         href: '/services/web-design',
-        icon: ChartBarIcon,
+        icon: DesktopComputerIcon,
     },
     {
         name: 'Mobile Apps',
         description: 'Speak directly to your customers in a more meaningful way.',
         href: '/services/mobile-apps',
-        icon: CursorClickIcon,
+        icon: DeviceMobileIcon,
+    },
+    {
+        name: 'Shopify',
+        description: 'Speak directly to your customers in a more meaningful way.',
+        href: '/services/shopify',
+        icon: ShoppingCartIcon,
     },
 ]
 

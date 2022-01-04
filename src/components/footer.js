@@ -106,7 +106,7 @@ export default function Footer() {
                             alt="Company name"
                         />
                         <p className="text-gray-500 text-base">
-                            Making the world a better place through constructing elegant hierarchies.
+                            Helping small businesses reach their most ambitious goals.
                         </p>
                         <div className="flex space-x-6">
                             {navigation.social.map((item) => (
@@ -124,7 +124,7 @@ export default function Footer() {
                                 <ul role="list" className="mt-4 space-y-4">
                                     {navigation.solutions.map((item) => (
                                         <li key={item.name}>
-                                            <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                                            <a href={item.href} className="text-sm text-gray-500 hover:text-gray-900 font-light">
                                                 {item.name}
                                             </a>
                                         </li>
@@ -136,7 +136,7 @@ export default function Footer() {
                                 <ul role="list" className="mt-4 space-y-4">
                                     {navigation.support.map((item) => (
                                         <li key={item.name}>
-                                            <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                                            <a href={item.href} className="text-sm text-gray-500 hover:text-gray-900 font-light">
                                                 {item.name}
                                             </a>
                                         </li>
@@ -150,7 +150,7 @@ export default function Footer() {
                                 <ul role="list" className="mt-4 space-y-4">
                                     {navigation.company.map((item) => (
                                         <li key={item.name}>
-                                            <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                                            <a href={item.href} className="text-sm text-gray-500 hover:text-gray-900 font-light">
                                                 {item.name}
                                             </a>
                                         </li>
@@ -162,7 +162,7 @@ export default function Footer() {
                                 <ul role="list" className="mt-4 space-y-4">
                                     {navigation.legal.map((item) => (
                                         <li key={item.name}>
-                                            <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                                            <a href={item.href} className="text-sm text-gray-500 hover:text-gray-900 hover:text-base font-light">
                                                 {item.name}
                                             </a>
                                         </li>

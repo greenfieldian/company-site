@@ -20,6 +20,8 @@ module.exports = {
       'doughnuts-cream': '#fffcf6',
       'doughnuts-green': '#8cc63f',
       'travel-teal': '#54807B',
+      'worley-light': '#f4f2ed',
+      'worley-dark': '#926e5a',
     },
     extend: {},
   },
