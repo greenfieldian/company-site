@@ -8,8 +8,6 @@ import {
 
 } from '@heroicons/react/outline'
 import ContactForm from "../../components/contact-form";
-import TravelMockup from "../../images/travel-mockup.png";
-import Logo from "../../images/dnd-logo.png";
 import ReactNative from "../../images/react-native.webp"
 import Expo from "../../images/expo.webp"
 import AWS from "../../images/aws.webp"
@@ -17,7 +15,7 @@ import Firebase from "../../images/firebase.webp"
 import Flutter from "../../images/flutter.webp"
 import Swift from "../../images/swift.webp"
 import AppsImage from "../../images/mobile-apps.png";
-import Testimonial from "../../components/testimonial";
+import Testimonial2 from "../../components/testimonial-2";
 
 const features = [
     {
@@ -106,12 +104,10 @@ class MobileApps extends Component {
                                     <h2>Conception-to-launch mobile development services</h2>
                                 </div>
                                 <div className="">
-                                    <p className="font-light">Beneath the surface, there are countless factors that support the speed,
-                                        functionality, and security of your website. Our seasoned developers
-                                        understand the latest strategies to maximize the efficiency of your website
-                                        while including the features that you need. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p className="font-light text-lg">Mobile app development has long been a lengthy and resource heavy process, requiring large teams at a significant expense. We believe that mobile is the next frontier of digital, and should be accessible to businesses of any size.<br/><br/> Through our process building native applications, we’re able to reduce development time, ship more rapidly, and reduce your overall cost while maintaining quality.</p>
                                     <br/>
-                                    <p className="font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p className="font-light text-lg">In addition to native development, we work with your current tech stack to develop within an existing infrastructure.</p>
+                                    <br/><br/>
                                 </div>
                             </div>
                             <div className="mt-12 sm:mt-16 lg:mt-0">
@@ -151,7 +147,7 @@ class MobileApps extends Component {
                         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
                             <div className="text-center mb-5 max-w-3xl mx-auto mb-24">
                                 <h2 className="text-3xl md:text-4xl pb-8">Choose battle-tested web development services with community support over hype</h2>
-                                <p className="text-base sm:text-xl font-light">Whatever web applications you’re building, we got your back at every stage of web development, including web design. We’ve built a core system for a bank, an MVP marketplace sold for millions, and other 5☆ custom projects for 140+ companies worldwide. All in accordance with the client’s digital marketing strategy.</p>
+                                <p className="text-base sm:text-xl font-light">Whatever web applications you’re building, we got your back at every stage of web development, including web design. We’ve built a core system for a bank, an MVP marketplace that sold for millions, and other 5☆ custom projects for 140+ companies worldwide.</p>
                             </div>
                             <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-6 font-medium">
                                 <div className="col-span-1 flex flex-col justify-center md:col-span-2 lg:col-span-1 text-center">
@@ -224,7 +220,7 @@ class MobileApps extends Component {
                     {/* Frameworks */}
 
                     {/* Testimonial */}
-                    <Testimonial />
+                    <Testimonial2 />
                     {/* Testimonial */}
 
                     {/* Case Study */}

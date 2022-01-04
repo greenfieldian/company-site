@@ -3,42 +3,44 @@ import React from 'react'
 
 export default function NewsletterCTA() {
     return (
-        <div className="bg-white py-16 sm:py-24">
-            <div className="relative sm:py-16">
-                <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-                    <div className="relative rounded-2xl px-6 py-10 bg-accent overflow-hidden shadow-xl sm:px-12 sm:py-20">
-                        <div className="relative">
-                            <div className="sm:text-center">
-                                <h2 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
-                                    Get notified when we&rsquo;re launching.
-                                </h2>
-                                <p className="mt-6 mx-auto max-w-2xl text-lg text-white">
-                                    Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque
-                                    tristique pellentesque.
-                                </p>
-                            </div>
-                            <form action="#" className="mt-12 sm:mx-auto sm:max-w-lg sm:flex">
-                                <div className="min-w-0 flex-1">
-                                    <label htmlFor="cta-email" className="sr-only">
-                                        Email address
-                                    </label>
-                                    <input
-                                        id="cta-email"
-                                        type="email"
-                                        className="block w-full border-white border-transparent rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
-                                        placeholder="Enter your email"
-                                    />
-                                </div>
-                                <div className="mt-4 sm:mt-0 sm:ml-3">
-                                    <button
-                                        type="submit"
-                                        className="block w-full rounded-md border border-transparent px-5 py-3 bg-indigo-500 text-base font-medium text-white shadow hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 sm:px-10"
-                                    >
-                                        Notify me
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
+        <div className="bg-accent">
+            <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
+                <div className="px-6 py-6 bg-indigo-700 rounded-lg md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">
+                    <div className="xl:w-0 xl:flex-1">
+                        <h2 className="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">
+                            Want product news and updates?
+                        </h2>
+                        <p className="mt-3 max-w-3xl text-lg leading-6 text-indigo-200">
+                            Sign up for our newsletter to stay up to date.
+                        </p>
+                    </div>
+                    <div className="mt-8 sm:w-full sm:max-w-md xl:mt-0 xl:ml-8">
+                        <form className="sm:flex">
+                            <label htmlFor="email-address" className="sr-only">
+                                Email address
+                            </label>
+                            <input
+                                id="email-address"
+                                name="email-address"
+                                type="email"
+                                autoComplete="email"
+                                required
+                                className="w-full border-white px-5 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white rounded-md"
+                                placeholder="Enter your email"
+                            />
+                            <button
+                                type="submit"
+                                className="mt-3 w-full flex items-center justify-center px-5 py-3 border border-transparent shadow text-base font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0"
+                            >
+                                Notify me
+                            </button>
+                        </form>
+                        <p className="mt-3 text-sm text-indigo-200">
+                            We care about the protection of your data. Read our{' '}
+                            <a href="#" className="text-white font-medium underline">
+                                Privacy Policy.
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>

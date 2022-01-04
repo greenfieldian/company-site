@@ -17,36 +17,38 @@ import CSS from "../../images/css.webp"
 import Rails from "../../images/rails.webp"
 import NodeJS from "../../images/node-js.webp"
 import WebsitesImage from "../../images/websites-image.png";
+import Beck from "../../images/beck-logo.webp";
 
 const features = [
     {
         name: 'SEO Optimization',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+        description: 'Optimized for maximum searchability, allowing your customers to find you when they need you most.',
         icon: InboxIcon,
     },
     {
         name: 'Built to Scale',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+        description: 'Custom solutions optimized for efficiency, flexibility and deployment speed',
         icon: UsersIcon,
     },
     {
         name: '360° Support',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+        description: 'Built from the ground up, including hosting, page navigation,\n' +
+            'features, SEO, and more.',
         icon: TrashIcon,
     },
     {
         name: 'Complete Product Teams',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+        description: 'Access our team of business analysts, product designers, project managers, QA engineers, and full-stack developers',
         icon: UserGroupIcon,
     },
     {
         name: 'Quality Assurance',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+        description: 'QA performed before each deploy through manual and automated tests that catch bugs, performance issues, and conversion blockers',
         icon: TrashIcon,
     },
     {
         name: 'World-class UX/UI',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+        description: 'Designed to help your business with user adoption.',
         icon: TrashIcon,
     },
 ]
@@ -103,12 +105,7 @@ class WebDesign extends Component {
                                     <h2>One scalable team for start-to-finish development</h2>
                                 </div>
                                 <div className="">
-                                    <p className="font-light">Beneath the surface, there are countless factors that support the speed,
-                                        functionality, and security of your website. Our seasoned developers
-                                        understand the latest strategies to maximize the efficiency of your website
-                                        while including the features that you need. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    <br/>
-                                    <p className="font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p className="font-light text-lg">Beneath the surface, there are countless factors that support the speed, functionality, and security of your website. Todays business landscape is becoming increasingly digital-based, requiring that all companies wishing to compete have a strong web presence. Having experienced every stage of digital, we have developed proven methodologies for achieving business success. Our seasoned developers understand the latest strategies to maximize the efficiency of your website, while including the features that matter most to all stakeholders involved.</p>
                                 </div>
                             </div>
                             <div className="mt-12 sm:mt-16 lg:mt-0">
@@ -148,7 +145,7 @@ class WebDesign extends Component {
                         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
                             <div className="text-center mb-5 max-w-3xl mx-auto mb-24">
                                 <h2 className="text-3xl md:text-4xl pb-8">Choose battle-tested web development services with community support over hype</h2>
-                                <p className="text-base sm:text-xl font-light">Whatever web applications you’re building, we got your back at every stage of web development, including web design. We’ve built a core system for a bank, an MVP marketplace sold for millions, and other 5☆ custom projects for 140+ companies worldwide. All in accordance with the client’s digital marketing strategy.</p>
+                                <p className="text-base sm:text-xl font-light">Whatever web applications you’re building, we have your back at every stage of the development process. We’ve built a core system for a bank, an MVP marketplace that sold for millions, and other 5☆ projects for 140+ companies worldwide.</p>
                             </div>
                             <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-6 font-medium">
                                 <div className="col-span-1 flex flex-col justify-center md:col-span-2 lg:col-span-1 text-center">
@@ -221,15 +218,14 @@ class WebDesign extends Component {
                         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                             <div className="relative">
                                 <img
-                                    className="mx-auto h-8"
-                                    src="https://tailwindui.com/img/logos/workcation-logo-indigo-600-mark-gray-800-and-indigo-600-text.svg"
+                                    className="mx-auto h-20"
+                                    src={Beck}
                                     alt="Workcation"
                                 />
                                 <blockquote className="mt-10">
                                     <div className="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-900">
                                         <p>
-                                            &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente
-                                            alias molestiae. Numquam corrupti in laborum sed rerum et corporis.&rdquo;
+                                            &ldquo;Their business acumen, coupled with their creative prowess, is an unmatched force. Over the course of our relationship, they've become not just a valued service provider, but a key growth partner.&rdquo;
                                         </p>
                                     </div>
                                     <footer className="mt-8">
@@ -237,18 +233,18 @@ class WebDesign extends Component {
                                             <div className="md:flex-shrink-0">
                                                 <img
                                                     className="mx-auto h-10 w-10 rounded-full"
-                                                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                                                     alt=""
                                                 />
                                             </div>
                                             <div className="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
-                                                <div className="text-base font-medium text-gray-900">Judith Black</div>
+                                                <div className="text-base font-medium text-gray-900">Michael Judine</div>
 
                                                 <svg className="hidden md:block mx-1 h-5 w-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
                                                     <path d="M11 0h3L9 20H6l5-20z" />
                                                 </svg>
 
-                                                <div className="text-base font-medium text-gray-500">CEO, Workcation</div>
+                                                <div className="text-base font-medium text-gray-500">Managing Director, Beck Venture Partners</div>
                                             </div>
                                         </div>
                                     </footer>
