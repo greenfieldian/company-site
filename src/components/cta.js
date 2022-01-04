@@ -9,7 +9,7 @@ export default function CallToAction() {
                     <span className="block">Access exclusive tips, tricks and insights we only share with email subscribers</span>
                 </h2>
                 <Link
-                    href="#"
+                    to="/subscribe"
                     className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 text-base font-medium rounded-3xl bg-accent text-white hover:bg-indigo-50 sm:w-auto"
                 >
                     Subscribe

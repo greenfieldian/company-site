@@ -9,7 +9,7 @@ module.exports = {
       'night': '#000000',
       'light-gray': '#F2F5F8',
       'light-grey': 'rgba(0, 0, 0, 0.2)',
-      'light-blue': '#f0fafe',
+      'light-blue': '#f3f7fb',
       'dark-gray': '#636363',
       'background-gray': '#f5f5f5',
       'blue': '#071133',

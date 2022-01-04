@@ -14,24 +14,30 @@ import AWS from '../images/aws.webp';
 import Shopify from '../images/shopify-partner.webp';
 import Mailchimp from '../images/mailchimp-partner.webp';
 import Hubspot from '../images/hubspot.webp';
+import Beck from "../images/beck-logo.webp";
+import Street from "../images/23-street.webp";
 
 const services = [
     {
         name: 'Websites',
         description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+            'Our secure, mobile-friendly solutions\n' +
+            'are easy to navigate, load quickly, and support the features you need.',
         link: '/services/web-design',
     },
     {
         name: 'Mobile Apps',
         description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+            'By understanding your goals, staying consistent with your\n' +
+            'brand, and maintaining transparency throughout the entire process, we build\n' +
+            'secure, functional, and user-friendly apps.',
         link: '/services/mobile-apps',
     },
     {
         name: 'Shopify',
         description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+            'Through conversion-oriented Shopify and Shopify Plus solutions, we help\n' +
+            'e-commerce businesses grow and scale their operations.',
         link: '/services/shopify',
     },
 ]
@@ -93,14 +99,17 @@ class AboutUs extends Component {
                                 <h2>Our Story</h2>
                             </div>
                             <div className="">
-                                <p className="font-light leading-loose">Beneath the surface, there are countless factors that support the speed,
-                                    functionality, and security of your website. Our seasoned developers
-                                    understand the latest strategies to maximize the efficiency of your website
-                                    while including the features that you need. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p className="font-light leading-loose">At Shockmouse Media, we believe that the best relationships lead to the best
+                                    results. That’s why to us, you’re more than our client - you’re our partner. Having
+                                    worked with businesses of all sizes across every industry, our team knows how to achieve results that noticeably improve your digital
+                                    presence. Every step of the way, we keep the community in our hearts while
+                                    standing tall against discrimination and racial injustice. Work with our
+                                    dedicated team today and discover why Shockmouse Media is trusted on an
+                                    international scale.</p>
                                 <br/>
                                 <div>
-                                    <h4 className="font-bold mb-5">Our Philosophy</h4>
-                                    <p className="font-light leading-loose">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.</p>
+                                    <h4 className="font-bold mb-5">Our Mission</h4>
+                                    <p className="font-light leading-loose">We're on a mission to help 1 million small businesses maximize their digital potential.</p>
                                 </div>
 
                             </div>
@@ -122,8 +131,8 @@ class AboutUs extends Component {
                 <section className="bg-white">
                     <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-5 max-w-3xl mx-auto mb-24">
-                            <h2 className="text-3xl md:text-4xl pb-8">Choose battle-tested web development services with community support over hype</h2>
-                            <p className="text-base sm:text-xl font-light">Whatever web applications you’re building, we got your back at every stage of web development, including web design. We’ve built a core system for a bank, an MVP marketplace sold for millions, and other 5☆ custom projects for 140+ companies worldwide. All in accordance with the client’s digital marketing strategy.</p>
+                            <h2 className="text-3xl md:text-4xl pb-8">We partner with the best in the business</h2>
+                            <p className="text-base sm:text-xl font-light">We build lasting relationships with our clients that move through many stages of growth. As a result, we partner exclusively with companies that can scale with us. Together, we're an unstopable force.</p>
                         </div>
                         <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-6 font-medium">
                             <div className="col-span-1 flex flex-col justify-center md:col-span-2 lg:col-span-1 text-center">
@@ -200,13 +209,13 @@ class AboutUs extends Component {
                         </div>
                         <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8">
                             {services.map((service) => (
-                                <div key={service.name} className="bg-light-gray rounded p-6">
+                                <div key={service.name} className="bg-light-blue rounded p-6">
                                     <dt>
                                         <p className="text-lg leading-6 font-medium text-gray-900">{service.name}</p>
                                     </dt>
                                     <dd className="my-2 text-base text-gray-500 font-light">{service.description}</dd>
                                     <div>
-                                        <Link to={service.link}>Learn More <ArrowRightIcon className="w-8 h-4 inline-block"/></Link>
+                                        <Link to={service.link} className="text-accent">Learn More <ArrowRightIcon className="w-8 h-4 inline-block"/></Link>
                                     </div>
                                 </div>
                             ))}
@@ -215,126 +224,74 @@ class AboutUs extends Component {
                 </div>
                 {/* Service Offerings */}
 
-                {/* Locations Section */}
-                <section>
-                    <div className="relative bg-white py-16 sm:py-24">
-                        <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
-                            <div className="relative sm:py-16 lg:py-0">
-                                <div aria-hidden="true" className="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">
-                                    <div className="absolute inset-y-0 right-1/2 w-full bg-gray-50 rounded-r-3xl lg:right-72" />
-                                    <svg
-                                        className="absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12"
-                                        width={404}
-                                        height={392}
-                                        fill="none"
-                                        viewBox="0 0 404 392"
-                                    >
-                                        <defs>
-                                            <pattern
-                                                id="02f20b47-fd69-4224-a62a-4c9de5c763f7"
-                                                x={0}
-                                                y={0}
-                                                width={20}
-                                                height={20}
-                                                patternUnits="userSpaceOnUse"
-                                            >
-                                                <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
-                                            </pattern>
-                                        </defs>
-                                        <rect width={404} height={392} fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)" />
-                                    </svg>
-                                </div>
-                                <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
-                                    {/* Testimonial card*/}
-                                    <div className="relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden">
-                                        <img
-                                            className="absolute inset-0 h-full w-full object-cover"
-                                            src="https://images.unsplash.com/photo-1521510895919-46920266ddb3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&fp-x=0.5&fp-y=0.6&fp-z=3&width=1440&height=1440&sat=-100"
-                                            alt=""
-                                        />
-                                        <div className="absolute inset-0 bg-blue mix-blend-multiply" />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-indigo-600 via-indigo-600 opacity-90" />
-                                        <div className="relative px-8">
-                                            <div>
-                                                <img
-                                                    className="h-12"
-                                                    src="https://tailwindui.com/img/logos/workcation.svg?color=white"
-                                                    alt="Workcation"
-                                                />
-                                            </div>
-                                            <blockquote className="mt-8">
-                                                <div className="relative text-lg font-medium text-white md:flex-grow">
-                                                    <svg
-                                                        className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-indigo-400"
-                                                        fill="currentColor"
-                                                        viewBox="0 0 32 32"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-                                                    </svg>
-                                                    <p className="relative">
-                                                        Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam.
-                                                        Montes, magna cursus nulla feugiat dignissim id lobortis amet.
-                                                    </p>
-                                                </div>
+                <section className="pt-16 pb-20">
+                    <div className="text-center mb-5 sm:mb-20 mx-auto max-w-3xl">
+                        <span className="uppercase text-sm font-medium text-accent">Testimonials</span>
+                        <h2 className="text-3xl sm:text-4xl font-extrabold ">What our clients are saying about us</h2>
+                    </div>
+                    <div className="max-w-7xl mx-auto md:grid md:grid-cols-2 md:px-6 lg:px-8">
+                        <div className="py-12 px-4 sm:px-6 md:flex md:flex-col md:py-16 md:pl-0 md:pr-10 md:border-r md:border-indigo-900 lg:pr-16">
+                            <div className="md:flex-shrink-0">
+                                <img className="h-12 mx-auto" src={Beck} alt="Tuple" />
+                            </div>
+                            <blockquote className="mt-6 md:flex-grow md:flex md:flex-col">
+                                <div className="relative text-lg font-medium md:flex-grow text-center">
 
-                                                <footer className="mt-4">
-                                                    <p className="text-base font-semibold text-indigo-200">Sarah Williams, CEO at Workcation</p>
-                                                </footer>
-                                            </blockquote>
+                                    <p className="relative">
+                                        Their business acumen, coupled with their creative prowess, is an unmatched force. Over the course of our relationship, they've become not just a valued service provider, but a key growth partner.
+                                    </p>
+                                </div>
+                                <footer className="mt-8 text-center">
+                                    <div className="">
+                                        <div className="flex-shrink-0 inline-flex rounded-full border-2 border-white">
+                                            <img
+                                                className="h-12 w-12 rounded-full"
+                                                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div className="ml-4">
+                                            <div className="text-base font-medium">Michael Judine</div>
+                                            <div className="text-base font-medium text-indigo-200">Managing Director, Beck Venture Partners</div>
                                         </div>
                                     </div>
-                                </div>
+                                </footer>
+                            </blockquote>
+                        </div>
+                        <div className="py-12 px-4 border-t-2 border-indigo-900 sm:px-6 md:py-16 md:pr-0 md:pl-10 md:border-t-0 md:border-l lg:pl-16">
+                            <div className="md:flex-shrink-0 text-center">
+                                <img
+                                    className="h-12 mx-auto"
+                                    src={Street}
+                                    alt="Workcation"
+                                />
                             </div>
-
-                            <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
-                                {/* Content area */}
-                                <div className="pt-12 sm:pt-16 lg:pt-20">
-                                    <h2 className="text-3xl text-gray-900 font-extrabold tracking-tight sm:text-4xl">
-                                        On a mission to empower teams
-                                    </h2>
-                                    <div className="mt-6 text-gray-500 space-y-6">
-                                        <p className="text-lg">
-                                            Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique
-                                            pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel
-                                            porttitor vitae ut. Amet vitae fames senectus vitae.
-                                        </p>
-                                        <p className="text-base leading-7">
-                                            Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget
-                                            pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna. Sollicitudin tristique
-                                            eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu
-                                            viverra donec ut volutpat donec laoreet quam urna.
-                                        </p>
-                                        <p className="text-base leading-7">
-                                            Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet
-                                            velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus
-                                            egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.
-                                        </p>
-                                    </div>
+                            <blockquote className="mt-6 md:flex-grow md:flex md:flex-col">
+                                <div className="relative text-lg font-medium md:flex-grow text-center">
+                                    <p className="relative">
+                                        We've had issues with agencies in the past, so we were naturally hesitant to work with one again. The Shockmouse Media team understood and respected our concerns, patiently guiding us through our website re-design. As a result, we have an incredible site, and they have a lifelong customer.
+                                    </p>
                                 </div>
-
-                                {/* Stats section */}
-                                <div className="mt-10">
-                                    <dl className="grid grid-cols-2 gap-x-4 gap-y-8">
-                                        {stats.map((stat) => (
-                                            <div key={stat.label} className="border-t-2 border-gray-100 pt-6">
-                                                <dt className="text-base font-medium text-gray-500">{stat.label}</dt>
-                                                <dd className="text-3xl font-extrabold tracking-tight text-gray-900">{stat.value}</dd>
-                                            </div>
-                                        ))}
-                                    </dl>
-                                    <div className="mt-10">
-                                        <a href="#" className="text-base font-medium text-accent">
-                                            {' '}
-                                            Learn more about how we're changing the world <span aria-hidden="true">&rarr;</span>{' '}
-                                        </a>
+                                <footer className="mt-8 text-center">
+                                    <div className="">
+                                        <div className="flex-shrink-0 inline-flex rounded-full border-2 border-white">
+                                            <img
+                                                className="h-12 w-12 rounded-full"
+                                                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div className="ml-4">
+                                            <div className="text-base font-medium">Michelle Anastasio</div>
+                                            <div className="text-base font-medium">President, 23 Street</div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
+                                </footer>
+                            </blockquote>
                         </div>
                     </div>
                 </section>
-                {/* Locations Section */}
+
                 <ContactForm />
                 <CallToAction />
             </Layout>

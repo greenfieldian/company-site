@@ -172,8 +172,8 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="mt-12 border-t border-gray-200 pt-8">
-                    <p className="text-base text-gray-400 xl:text-center">&copy; 2021 Shockmouse Media LLC. All rights reserved.</p>
+                <div className="mt-12 border-t border-light-grey pt-8">
+                    <p className="text-light-grey xl:text-center text-sm font-light ">&copy; 2021 Shockmouse Media LLC. All rights reserved.</p>
                 </div>
             </div>
         </footer>
