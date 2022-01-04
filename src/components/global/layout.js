@@ -5,7 +5,7 @@ import Footer from '../footer'
 
 const Layout =({children}) =>{
     return(
-        < div className="">
+        <div className="bg-white">
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Shockmouse Media</title>
