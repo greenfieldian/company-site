@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Layout from "../components/global/layout";
 import {graphql} from "gatsby";
 import get from "lodash/get";
-import NewsletterCTA from "../components/newsletterCTA";
+import CallToAction from "../components/cta";
 import { FaFacebookF, FaTwitter, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 class BlogPostTemplate extends Component {
@@ -30,7 +30,7 @@ class BlogPostTemplate extends Component {
                 </div>
 
                 <section>
-                    <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-16 font-light">
+                    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16 font-light">
                         <div
                             className="blog-post-body"
                             dangerouslySetInnerHTML={{__html: post.body.childMarkdownRemark.html}}
@@ -48,7 +48,7 @@ class BlogPostTemplate extends Component {
                     </div>*/}
                 </section>
 
-                <NewsletterCTA />
+                <CallToAction />
             </Layout>
         );
     }

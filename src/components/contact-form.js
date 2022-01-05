@@ -17,7 +17,8 @@ export default function ContactForm() {
                     <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Contact Us</h2>
                 </div>
                 <div className="mt-12">
-                    <form action="#" method="POST" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                    <form action="#" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" name="contact" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                        <input type="hidden" name="form-name" value="contact" />
                         <div>
                             <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
                                 First name
@@ -108,7 +109,7 @@ export default function ContactForm() {
                 />
                             </div>
                         </div>
-                        <div className="sm:col-span-2">
+                        {/*<div className="sm:col-span-2">
                             <div className="flex items-start">
                                 <div className="flex-shrink-0">
                                     <Switch
@@ -129,7 +130,7 @@ export default function ContactForm() {
                                         />
                                     </Switch>
                                 </div>
-                                <div className="ml-3">
+                                {/*<div className="ml-3">
                                     <p className="text-base text-gray-500">
                                         By selecting this, you agree to the{' '}
                                         <Link to="/legal/privacy-policy" className="font-medium text-accent underline">
@@ -143,7 +144,7 @@ export default function ContactForm() {
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </div>*/}
                         <div className="sm:col-span-2">
                             <button
                                 type="submit"

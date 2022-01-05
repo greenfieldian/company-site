@@ -6,7 +6,6 @@ const navigation = {
     solutions: [
         { name: 'Websites', href: '/services/web-design' },
         { name: 'Mobile Apps', href: '/services/mobile-apps' },
-        { name: 'Shopify', href: '/services/shopify' },
     ],
     support: [
         { name: 'Doughnuts & Dragons', href: '/case-studies/doughnuts-dragons' },

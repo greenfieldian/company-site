@@ -3,12 +3,10 @@ import { Fragment } from 'react'
 import {Link} from 'gatsby'
 import { Popover, Transition } from '@headlessui/react'
 import {
-    ChartBarIcon,
     DesktopComputerIcon,
     MenuIcon,
     SupportIcon,
     XIcon,
-    ShoppingCartIcon,
     DeviceMobileIcon,
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
@@ -26,12 +24,6 @@ const services = [
         description: 'Speak directly to your customers in a more meaningful way.',
         href: '/services/mobile-apps',
         icon: DeviceMobileIcon,
-    },
-    {
-        name: 'Shopify',
-        description: 'Speak directly to your customers in a more meaningful way.',
-        href: '/services/shopify',
-        icon: ShoppingCartIcon,
     },
 ]
 
@@ -128,9 +120,6 @@ export default function Header() {
                         </Link>
                         <Link to="/blog" className="text-base font-medium text-gray-500 hover:text-gray-900">
                             Blog
-                        </Link>
-                        <Link className="text-base font-medium text-gray-500 hover:text-gray-900">
-                            Careers
                         </Link>
 
                             <Link
