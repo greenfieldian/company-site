@@ -121,47 +121,6 @@ class IndexPage extends Component {
                           </div>
                       </div>
                   </div>
-                  <div className="relative mt-24">
-                      <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-                          <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
-                              <div>
-                                  <div>
-                <span className="h-12 w-12 rounded-md flex items-center justify-center bg-indigo-600">
-                  <InboxIcon className="h-6 w-6 text-white" aria-hidden="true" />
-                </span>
-                                  </div>
-                                  <div className="mt-6">
-                                      <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-                                          Shopify
-                                      </h2>
-                                      <p className="mt-4 text-lg text-gray-500">
-                                          By providing conversion-oriented Shopify and Shopify Plus solutions, we help
-                                          eCommerce businesses grow and scale their operations. Our experienced
-                                          developers set up, design, and optimize your pages for increased sales and
-                                          visibility. As digital retail grows, we help you stay at the leading edge.
-                                      </p>
-                                      <div className="mt-6">
-                                          <Link
-                                              to="/services/shopify"
-                                              className="inline-flex px-4 py-2 bg-accent text-white text-base font-medium shadow-sm rounded-3xl"
-                                          >
-                                              Learn More
-                                          </Link>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div className="mt-12 sm:mt-16 lg:mt-0">
-                              <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-                                  <img
-                                      className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                                      src={ShopifyImage}
-                                      alt="Inbox user interface"
-                                  />
-                              </div>
-                          </div>
-                      </div>
-                  </div>
               </div>
           </section>
 

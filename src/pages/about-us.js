@@ -66,8 +66,7 @@ class AboutUs extends Component {
                                     <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                                         <h1 className="text-center text-4xl font-extrabold sm:text-5xl lg:text-6xl">
                                             <span className="uppercase text-sm font-medium text-accent">About Us</span>
-                                            <span className="block">Take control of your</span>
-                                            <span className="block">customer support</span>
+                                            <span className="block">A team of builders, visionaries and entrepreneurs</span>
                                         </h1>
                                         <p className="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">
                                             Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
