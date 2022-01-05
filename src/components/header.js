@@ -11,6 +11,7 @@ import {
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import Logo from '../images/logo.png'
+import Favicon from '../images/favicon.png'
 
 const services = [
     {
@@ -43,7 +44,7 @@ function classNames(...classes) {
 
 export default function Header() {
     return (
-        <Popover className="relative bg-white z-50 text-black">
+        <Popover className="relative bg-white z-50 text-black sticky top-0 z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
                     <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -149,7 +150,7 @@ export default function Header() {
                                 <div>
                                     <img
                                         className="h-8 w-auto"
-                                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                                        src={Favicon}
                                         alt="Workflow"
                                     />
                                 </div>
