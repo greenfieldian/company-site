@@ -5,6 +5,7 @@ import Layout from "../components/global/layout";
 import ArticlePreview from '../components/article-preview'
 import CallToAction from "../components/cta";
 import NewsletterCTA from '../components/newsletterCTA'
+import {Helmet} from "react-helmet";
 
 
 
@@ -13,6 +14,12 @@ class Blog extends Component {
         const posts = get(this, 'props.data.allContentfulBlogPost.edges')
 
         return (
+            <>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Blog | Shockmouse Media</title>
+                    <link rel="canonical" href="https://shockmouse.com" />
+                </Helmet>
             <Layout location={this.props.location}>
                 {/* Header */}
                 <div className="py-24 sm:py-32">
@@ -43,6 +50,7 @@ class Blog extends Component {
                     <CallToAction />
                 </div>
             </Layout>
+                </>
         );
     }
 }

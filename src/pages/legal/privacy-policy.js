@@ -1,9 +1,16 @@
 import React, {Component} from 'react';
 import Layout from "../../components/global/layout";
+import {Helmet} from "react-helmet";
 
 class PrivacyPolicy extends Component {
     render() {
         return (
+            <>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Privacy Policy | Shockmouse Media</title>
+                    <link rel="canonical" href="https://shockmouse.com" />
+                </Helmet>
             <Layout>
                 <section className="max-w-4xl mx-auto px-4 sm:px-6 mt-16">
                     <div className="text-center mb-10">
@@ -124,6 +131,7 @@ class PrivacyPolicy extends Component {
                     </div>
                 </section>
             </Layout>
+            </>
         );
     }
 }

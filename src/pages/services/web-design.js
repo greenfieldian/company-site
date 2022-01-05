@@ -18,6 +18,7 @@ import Rails from "../../images/rails.webp"
 import NodeJS from "../../images/node-js.webp"
 import WebsitesImage from "../../images/websites-image.png";
 import Beck from "../../images/beck-logo.webp";
+import {Helmet} from "react-helmet";
 
 const features = [
     {
@@ -52,16 +53,16 @@ const features = [
         icon: TrashIcon,
     },
 ]
-const stats = [
-    { label: 'Founded', value: '2021' },
-    { label: 'Employees', value: '5' },
-    { label: 'Beta Users', value: '521' },
-    { label: 'Raised', value: '$25M' },
-]
 
 class WebDesign extends Component {
     render() {
         return (
+            <>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Websites | Shockmouse Media</title>
+                    <link rel="canonical" href="https://shockmouse.com" />
+                </Helmet>
             <Layout>
                 <main className="overflow-hidden">
                     {/* Hero section */}
@@ -259,6 +260,7 @@ class WebDesign extends Component {
                     {/* Contact Form */}
                 </main>
             </Layout>
+            </>
         );
     }
 }
