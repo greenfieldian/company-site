@@ -34,7 +34,7 @@ export default function CallToAction() {
                                 type="submit"
                                 className="mt-3 w-full flex items-center justify-center px-5 py-3 shadow text-base font-medium rounded-md text-white bg-accent hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0"
                             >
-                                Notify me
+                                Subscribe
                             </button>
                         </form>
                         <p className="mt-3 text-sm text-indigo-200">

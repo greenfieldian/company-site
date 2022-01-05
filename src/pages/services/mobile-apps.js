@@ -16,6 +16,7 @@ import Flutter from "../../images/flutter.webp"
 import Swift from "../../images/swift.webp"
 import AppsImage from "../../images/mobile-apps.png";
 import Testimonial2 from "../../components/testimonial-2";
+import {Helmet} from "react-helmet";
 
 const features = [
     {
@@ -61,6 +62,12 @@ const stats = [
 class MobileApps extends Component {
     render() {
         return (
+            <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Mobile Apps | Shockmouse Media</title>
+                <link rel="canonical" href="https://shockmouse.com" />
+            </Helmet>
             <Layout>
                 <main className="overflow-hidden">
                     {/* Hero section */}
@@ -228,6 +235,7 @@ class MobileApps extends Component {
                     {/* Contact Form */}
                 </main>
             </Layout>
+            </>
         );
     }
 }

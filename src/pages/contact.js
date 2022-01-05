@@ -3,10 +3,17 @@ import { ExternalLinkIcon } from '@heroicons/react/solid'
 import Layout from '../components/global/layout'
 import CallToAction from "../components/cta";
 import ContactForm from "../components/contact-form";
+import {Helmet} from "react-helmet";
 
 class ContactPage extends Component {
     render() {
         return (
+            <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Contact Us | Shockmouse Media</title>
+                <link rel="canonical" href="https://shockmouse.com" />
+            </Helmet>
             <Layout>
             <main>
                 {/* Header */}
@@ -30,6 +37,7 @@ class ContactPage extends Component {
                 <CallToAction />
             </main>
             </Layout>
+            </>
         );
     }
 }

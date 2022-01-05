@@ -16,6 +16,7 @@ import Mailchimp from '../images/mailchimp-partner.webp';
 import Hubspot from '../images/hubspot.webp';
 import Beck from "../images/beck-logo.webp";
 import Street from "../images/23-street.webp";
+import {Helmet} from "react-helmet";
 
 const services = [
     {
@@ -54,6 +55,12 @@ class AboutUs extends Component {
         const locations = get(this, 'props.data.allContentfulLocations.edges')
 
         return (
+            <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>About Us | Shockmouse Media</title>
+                <link rel="canonical" href="https://shockmouse.com" />
+            </Helmet>
             <Layout>
                 {/* Hero Section */}
                 <div>
@@ -294,6 +301,7 @@ class AboutUs extends Component {
                 <ContactForm />
                 <CallToAction />
             </Layout>
+            </>
         );
     }
 }

@@ -6,22 +6,15 @@ import Layout from "../components/global/layout";
 import CallToAction from "../components/cta";
 import Hero from "../components/hero";
 import PartnerCloud from "../components/partner-cloud";
-import { InboxIcon, SparklesIcon, CloudUploadIcon,
-    CogIcon,
-    LockClosedIcon,
-    RefreshIcon,
-    ServerIcon,
-    ShieldCheckIcon, } from '@heroicons/react/outline'
-
-
+import { InboxIcon, SparklesIcon } from '@heroicons/react/outline'
 import WebsitesImage from "../images/websites-image.png"
 import AppsImage from "../images/mobile-apps.png"
-import ShopifyImage from "../images/shopify-image.png"
 import ContactForm from "../components/contact-form";
 import ArticlePreview from "../components/article-preview";
 
 import Street from "../images/23-street.webp"
 import Beck from "../images/beck-logo.webp"
+import {Helmet} from "react-helmet";
 
 
 class IndexPage extends Component {
@@ -29,6 +22,11 @@ class IndexPage extends Component {
       const posts = get(this, 'props.data.allContentfulBlogPost.edges')
     return (
         <div className="">
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>Shockmouse Media | Boutique Web Agency</title>
+            <link rel="canonical" href="https://shockmouse.com" />
+        </Helmet>
           <Layout>
           <Hero />
           <PartnerCloud />

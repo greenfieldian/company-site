@@ -4,12 +4,19 @@ import {graphql} from "gatsby";
 import get from "lodash/get";
 import CallToAction from "../components/cta";
 import { FaFacebookF, FaTwitter, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import {Helmet} from "react-helmet";
 
 class BlogPostTemplate extends Component {
     render() {
         const post = get(this.props, 'data.contentfulBlogPost')
 
         return (
+            <>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>{post.title} | Shockmouse Media</title>
+                    <link rel="canonical" href="https://shockmouse.com" />
+                </Helmet>
             <Layout>
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center pt-12 pb-6">
                     <div className="mb-10">
@@ -50,6 +57,7 @@ class BlogPostTemplate extends Component {
 
                 <CallToAction />
             </Layout>
+                </>
         );
     }
 }
