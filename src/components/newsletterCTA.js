@@ -11,7 +11,7 @@ export default function NewsletterCTA() {
                             Want product news and updates?
                         </h2>
                         <p className="mt-3 max-w-3xl text-lg leading-6 text-indigo-200">
-                            Sign up for our newsletter to stay up to date.
+                            Access exclusive tips, tricks and insights we only share with email subscribers.
                         </p>
                     </div>
                     <div className="mt-8 sm:w-full sm:max-w-md xl:mt-0 xl:ml-8">

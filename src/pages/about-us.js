@@ -69,13 +69,13 @@ class AboutUs extends Component {
                                             <span className="block">A team of builders, visionaries and entrepreneurs</span>
                                         </h1>
                                         <p className="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">
-                                            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
-                                            amet fugiat veniam occaecat fugiat aliqua.
+                                            Leveraging our experience, each website, app, or e-commerce storefront we build is
+                                            custom-tailored to your unique goals.
                                         </p>
                                         <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                                             <div className="space-y-4 sm:space-y-0 sm:mx-auto">
                                                 <Link
-                                                    to="#"
+                                                    to="/contact"
                                                     className="flex items-center justify-center px-3 py-2 bg-accent text-white rounded-3xl text-base font-medium shadow-sm hover:bg-blue sm:px-6"
                                                 >
                                                     Get in touch
