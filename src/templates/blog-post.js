@@ -39,7 +39,7 @@ class BlogPostTemplate extends Component {
                 <section>
                     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16 font-light">
                         <div
-                            className="blog-post-body"
+                            className="whitespace-pre-line"
                             dangerouslySetInnerHTML={{__html: post.body.childMarkdownRemark.html}}
                         />
                     </div>
